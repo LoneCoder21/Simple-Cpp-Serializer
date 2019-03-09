@@ -39,7 +39,7 @@ struct Storage {
 
 		template <template <class, class> class Container, class A, class B>
 		Storage &operator<< (const Container <A, B> &X) {
-			if (typeid(Container) != typeid(std::forward_list)) *this << X.size();
+			*this << X.size();
 			for (typename Container <A, B>::const_iterator it = X.cbegin(); it != X.cend(); it++) {
 				*this << (*it);
 			} return *this;
