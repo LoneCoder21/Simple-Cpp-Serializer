@@ -25,11 +25,6 @@ struct Storage {
 	public:
 		Storage(const std::string x) : Path(x) {}
 
-		template <typename Var, typename = typename std::enable_if <std::is_class<Var>::value>::type>
-		Storage &operator<< (const Var &Object) {
-			return *this;
-		}
-
 		template <typename Var, typename = typename std::enable_if <!std::is_class <Var>::value>::type>
 		Storage &operator<< (const Var value) {
 			FileW.write((char*) &value, sizeof(Var));
