@@ -19,13 +19,9 @@ int main() {
 
 Console Output
 -
-`Data 3 Serialized`
+`Data 3 Serialized //Vector X contain the next 3 vectors`
 
-`//Vector X contain the next 3 vectors`
-
-`Data 3 Serialized`
-
-`//Vector X[0] contain the next 3 elements`
+`Data 3 Serialized //Vector X[0] contain the next 3 elements`
 
 `Data 1 Serialized`
 
@@ -33,9 +29,7 @@ Console Output
 
 `Data 3 Serialized`
 
-`Data 3 Serialized`
-
-`//Vector X[1] contain the next 3 elements`
+`Data 3 Serialized //Vector X[1] contain the next 3 elements`
 
 `Data 4 Serialized`
 
@@ -43,9 +37,7 @@ Console Output
 
 `Data 6 Serialized`
 
-`Data 3 Serialized`
-
-`//Vector X[2] contain the next 3 elements`
+`Data 3 Serialized //Vector X[2] contain the next 3 elements`
 
 `Data 7 Serialized`
 
