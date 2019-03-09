@@ -1,9 +1,11 @@
 # Simple-Cpp-Serializer
+---------------------------------------------------------------
+Description
 
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 
-Usage
+Example Code
 ```
 int main() {
 	Storage Store("D:/Archivos/texto.txt");
@@ -15,11 +17,8 @@ int main() {
 }
 ```
 
----------------------------------------------------------------
-
 Console Output
 -
-
 `Data 3 Serialized //Vector X contain the next 3 vectors`
 
 `Data 3 Serialized //Vector X[0] contain the next 3 elements`
