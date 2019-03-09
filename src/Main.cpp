@@ -33,7 +33,7 @@ struct Storage {
 		template <typename Var, typename = typename std::enable_if <!std::is_class <Var>::value>::type>
 		Storage &operator<< (const Var value) {
 			FileW.write((char*) &value, sizeof(Var));
-			std::cout << "Dato " << value << " Serializado " << '\n';
+			std::cout << "Data " << value << " Serialized " << '\n';
 			return *this;
 		}
 
