@@ -5,7 +5,7 @@ Description
 ---------------------------------------------------------------
 ---------------------------------------------------------------
 
-Example Code
+First Example Code
 ```
 int main() {
 	Storage Store("D:/Archivos/texto.txt");
@@ -49,3 +49,30 @@ Console Output
 ---------------------------------------------------------------
 
 So you are saving the amount of elements and the elements
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+
+Second Example Code
+```cpp
+class Data {
+	private:
+		std::vector <std::vector <int>> X = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
+	public:
+		static void Serialize(Storage &Store, const Data &Object) {
+			Store.openWrite();
+			Store << Object.X;
+			Store.closeWrite();
+		}
+};
+
+int main() {
+	Storage Store("D:/Archivos/texto.txt");
+	Data Instance;
+
+	Data::Serialize(Store, Instance);
+	return 0;
+}
+```
+
+You can Convert the Serializer As a class Serializer easly
