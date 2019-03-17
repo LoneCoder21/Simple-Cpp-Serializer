@@ -8,7 +8,7 @@ Description
 First Example Code
 ```
 int main() {
-	Storage Store("D:/Archivos/texto.txt");
+	Storage Store("texto.txt");
 	std::vector <std::vector <int>> X = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
 
 	Store.openWrite();
@@ -64,7 +64,7 @@ class Data {
 };
 
 int main() {
-	Storage Store("D:/Archivos/texto.txt");
+	Storage Store("texto.txt");
 	Data Instance;
 
 	Data::Serialize(Store, Instance);
